@@ -1,0 +1,17 @@
+⬆️ Daily Git workflow
+
+cd C:\Users\shany\OneDrive\Desktop\marvallous
+git status
+git add .
+git commit -m "Added python_programming_assignment"
+git push
+
+
+Share a specific assignment
+https://github.com/shanyr502015/marvallous/tree/main/assignment
+
+Share class notes
+https://github.com/shanyr502015/marvallous/tree/main/classes
+
+Share full repo
+https://github.com/shanyr502015/marvallous
