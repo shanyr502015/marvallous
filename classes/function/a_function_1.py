@@ -1,5 +1,6 @@
 ########################################################## function_1.py ############################################################
 # static way of taking input and processing
+# method/api all are functions
 no1 = 10
 no2 = 11
 ans = no1 * no2 # this is business logic of programm (here we want multiplication business operation)
