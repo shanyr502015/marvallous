@@ -1,22 +1,22 @@
 ########################################################## function_3.py ##########################################################
-# dynamic way of taking input and processing with type conversion
-print("enter first number : ")
-no1 = int(input()) # 10, converting string input to integer_type
-print("enter second number : ")
-no2 = int(input()) # 11, converting string input to integer_type
+# dynamic way of taking input & processing with type conversion
+# print("enter first number : ")
+no1 = int(input("enter first number : ")) # 10, converting string input to integer_type
+# print("enter second number : ")
+no2 = int(input("enter second number : ")) # 11, converting string input to integer_type
 
-ans = no1 * no2
+ans = no1 * no2 # 110, now multiplication will work fine because we converted input string to integer_type.
 print("multiplication is :", ans) # 110 (correct multiplication because we converted input string to integer_type)
 
 ########################################################## udf_1.py ############################################################
 # user defined function (UDF) for multiplication business logic to follow DRY principle(do not repeat yourself principle)
-#  function name multiplication is generic and used multiple times in the same file
-def multiplication(value1,value2): # function definition, defining function name as multiplication and parameters value1,value2 
-    # The colon (:) after function definition line is mandatory in Python. It indicates start of function body, and all statements within function must be indented to form block under this definition.  
+#  function name multiplication is generic and used multiple times in same .py file
+def multiplication(value1,value2): # function definition, defining function name as multiplication & arguments value1,value2 
+    # colon (:) after function definition line is mandatory in Python. It indicates start of function body & all statements within function must be indented to form block under this definition.  
     # function body, all statements inside function body should be indented
-    ans = 0 # local variable declaration/initialization/definition/assignment/creation
+    ans = 0 # local variable declaration/initialization/definition/assignment/creation, local to this function only, not accessible outside this function.
     ans = value1 * value2 # local variable declaration/initialization/definition/assignment/creation
-    return ans # returning ans value to calling place, where function is called, return statement is always the last statement of function body.
+    return ans # returning ans value to calling place, where function is called, return statement is always last statement of function body.
 
 print("demo application")
 
@@ -30,7 +30,7 @@ print("demo application") # self executable module (line with 0 indentation)
 
 no1 = 10 # global varaible value assigned, ( supposer its item1 in shop)
 no2 = 11 # global varaible value assigned, ( supposer its item2 in shop)
-result = 0  # global varaible (supposer its customer bag who went shop and bought some items in it by calling Ganeshshop function))
+result = 0  # global variable (supposer its customer bag who went shop and bought some items in it by calling Ganeshshop function))
 
 result = multiplication(no1, no2) # calling multiplication function by passing no1 and no2 as arguments, and returning value is stored in result variable. (calls the function and stores return value in result variable, which is global variable)
 print("multiplication is : ",result) # printing result variable value, which is global variable. (we need to show what we bring from ganeshshop in the bag to our mother at home)

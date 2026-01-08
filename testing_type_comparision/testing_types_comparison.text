@@ -1,0 +1,84 @@
+🧠 One-Line Memory Trick
+        UT → “Does my code work?”
+        Integration → “Do modules talk correctly?”
+        SIT → “Does the full system work?”
+        UAT → “Does business accept it?”
+
+UT → Code
+Integration → Flow/modules
+SIT → End-to-End/system
+UAT → Business
+
+        ┌──────────────────┐
+        │   Unit Testing   │
+        │ (Single Module)  │
+        └────────┬─────────┘
+                 │
+                 ▼
+        ┌──────────────────┐
+        │ Integration Test │
+        │ (Module + Module)│
+        └────────┬─────────┘
+                 │
+                 ▼
+        ┌──────────────────┐
+        │       SIT        │
+        │ (End-to-End Sys) │
+        └────────┬─────────┘
+                 │
+                 ▼
+        ┌──────────────────┐
+        │       UAT        │
+        │ (Business Check) │
+        └──────────────────┘
+
+
+🔹 Unit Testing (UT)
+        Tests smallest part of code (function / module).
+        Done by developers.
+        Checks logic correctness of individual components.
+        Example: Testing a Python function that calculates tax.
+
+🔹 Integration Testing
+        Tests interaction between modules/components.
+        Done after unit testing.
+        Ensures data flows correctly between systems.
+        Example: IDL → Curated → BSIG data flow working properly.
+
+🔹 System Integration Testing (SIT)
+        Tests complete system end-to-end in test environment.
+        Done by QA team.
+        Validates business + technical flows together.
+        Example: Source → IDL → Curated → Reports end-to-end validation.
+
+🔹 User Acceptance Testing (UAT)
+        Tests system from business/user perspective.
+        Done by business users / clients.
+        Confirms system meets business requirements.
+        Example: Finance team validates GL balances and reports.
+
+
+
+🔷 Real Project Example (Finance Data Warehouse)
+
+🔹 Unit Testing (UT): Test Spark SQL / Python logic individually
+        Example: Validate batch_id generation logic, Check GL amount calculation function
+        👉 Question answered: “Is my code correct?”
+
+🔹 Integration Testing: Test interaction between systems
+        Example:IDL output correctly consumed by Curated, Curated tables readable by BSIG
+        👉 Question answered: “Are systems talking properly?”
+
+🔹 System Integration Testing (SIT): Test end-to-end flow
+        Example:Source → IDL → Curated → Reporting, Batch control, counts, sums, error handling
+        👉 Question answered: “Does full pipeline work?”
+
+🔹 User Acceptance Testing (UAT): Business validates results
+        Example: Finance team checks GL balances, Reports match legacy system
+        👉 Question answered: “Can business sign off?”
+
+🔷 Interview-Ready 2-Line Answer
+    Unit testing validates individual code logic,
+    Integration testing ensures modules interact correctly,
+    SIT validates full end-to-end system behavior, and
+    UAT confirms the solution meets business expectations.
