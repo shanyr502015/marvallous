@@ -8,7 +8,7 @@ def main():
     # positional
     employeeinfo("rahul",26,2000.50,"puen") # correct
     print("--------------")
-    employeeinfo(26,"rahul","puen",2000.50) # wreong
+    employeeinfo(26,"rahul","puen",2000.50) # wrong
     print("--------------")
     # keyword argument
     employeeinfo(age=26,name="rahul",city="pune",salary=2000.50) # correct
