@@ -45,7 +45,7 @@ print(value3) # {35, 40, 10, 30}
 print(type(value3)) # set
 
 #Try index access (NOT allowed)
-print(value3[0]) # error  ( not subscriptable - means not support index)
+# print(value3[0]) # error  ( not subscriptable - means not support index)
 
 ###################
 

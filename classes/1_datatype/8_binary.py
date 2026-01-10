@@ -18,7 +18,7 @@ print(type(data))
 print(data[0])
 
 
-data[0] = 66
+# data[0] = 66
 print(data[0]) # error, TypeError: 'bytes' object does not support item assignment(immutable)
 
 
@@ -39,5 +39,5 @@ print(type(data))
 print(data[0])
 
 
-data[0] = 66
+# data[0] = 66
 print(data[0]) # error, TypeError: 'bytes' object does not support item assignment(immutable)
