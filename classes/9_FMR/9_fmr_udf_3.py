@@ -22,13 +22,19 @@ def mapX(task, elements):
         result.append(ret)
 
     return result
-# add = lambda a,b: a + b
+# # add = lambda a,b: a + b
 def reduceX(task, elements):
     sum = 0
     # result = 0
     for no in elements:
         sum = task(sum,no)
-    # return result
+    return sum
+# def reduceX(task, elements):
+#     result = 0
+#     for no in elements:
+#         result = task(result, no)
+#     return result
+
 
 def main():
     data = [11,10,15,20,22,27,30]
