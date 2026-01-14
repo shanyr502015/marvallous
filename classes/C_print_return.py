@@ -12,8 +12,6 @@
 # | Analogy               | Waiter says "Here's pizza!"     | Waiter hands you pizza box |
 # | Result                | You SEE it                      | You GET it                 |
 # ----------------------------------------------------------------------------------------
-
-
 # 🏬 Shopping at the Mall
 # ❌ WINDOW SHOPPING (Print) - Just Looking
 def window_shop_phone():
@@ -87,6 +85,60 @@ bag_B = shop_B()  # What's in bag_B?
 print("Bag A:", bag_A)  # Bag A: None (empty! just looked)
 print("Bag B:", bag_B)  # Bag B: 👕 T-Shirt (you bought it!)
 
-# 🎬 Final Mantra:
-    # देखा है तो PRINT, लिया है तो RETURN!" ✨
-    # If you just SAW it = PRINT, If you GOT it = RETURN!"
+# 🎬 Final Mantra: देखा है तो PRINT, लिया है तो RETURN!" ✨ If you just SAW it = PRINT, If you GOT it = RETURN!"
+
+#############################`Difference between `return x`, `return x, y`, and `return`###############################
+#######################################################################################################################
+# The `return` statement is used to send a value from a function back to the caller.
+# What you write after `return` decides **what type of value is returned.
+# Python always returns one object, even when multiple values appear.
+
+# `return x`
+    # Returns one value (`x`).
+    # Type of returned value is the type of `x`.
+# `return x, y`
+    # Returns multiple values as a tuple.
+    # Internally, Python packs values into a tuple: `(x, y)`.
+# `return`
+    # Returns nothing explicitly.
+    # Python returns `None` by default.
+# If `return` is not written at all, Python also returns `None`.
+
+# Example 1: return x
+def square(n):
+    return n * n
+result = square(5)
+print(result)
+# Output: 25
+
+# Example 2: return x, y
+def calc(a, b):
+    return a + b, a - b
+result = calc(10, 5)
+print(result)
+# Output: (15, 5)
+
+# Example 3: return (no value)
+def show():
+    print("Hello")
+x = show()
+print(x)
+# Output:
+# Hello
+# None
+
+# Direct Comparison 
+    # `return x` → returns single value
+    # `return x, y` → returns tuple of values
+    # `return` → returns None
+
+# Common Mistakes
+    # ❌ Thinking `return x, y` returns two separate values (it returns a tuple).
+    # ❌ Forgetting that a function without `return` gives `None`.
+    # Interview line: “Python functions always return exactly one object.”
+
+# Extra Recommended Methods
+# Tuple unpacking – receive multiple returned values
+a, b = calc(10, 5)
+# Returning complex objects – list, dict, class objects
+# Early return – exiting function based on condition
