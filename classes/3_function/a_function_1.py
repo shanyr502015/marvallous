@@ -13,7 +13,7 @@ no1 = input() # 10, input() function takes input in string format, so no1 will b
 print("enter second number : ") # prompt message to user
 no2 = input() # 11, input() function takes input in string format, so no2 will be string '11', not integer 11.
 
-ans = no1 * no2 # TypeError: can't multiply sequence by non-int of type 'str', because input() function always takes input in string format
+ans = no1 + no2 # TypeError: can't multiply sequence by non-int of type 'str', because input() function always takes input in string format
 print("multiplication is :", ans)
 
 ########################################################## function_3.py ##########################################################

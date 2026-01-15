@@ -7,7 +7,7 @@ def marvallous1(value1, value2): # function definition with two parameters.
 def main():
     result = None # initialize result variable.
     result = marvallous1("python", 21) # function call with two arguments.
-    print("return value :", result) # print returned value.
+    print("return value inside main :", result) # print returned value.
 
 if __name__ == "__main__":  # Check if the script is run directly ,not imported.
     main() # If true, execute main function.

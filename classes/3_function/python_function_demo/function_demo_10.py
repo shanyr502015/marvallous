@@ -5,7 +5,7 @@ def fun():
 
 def gun():
     print("inside gun")
-    fun()
+    gun()
 
 def main():
     fun()

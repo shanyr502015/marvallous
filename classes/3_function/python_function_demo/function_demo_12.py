@@ -10,7 +10,5 @@ def phoenix():
 def main():
     phoenix.zara() # attributeerror: 'funciton' object has no attribute "zara"
    
-
-
 if __name__ == "__main__": 
     main()
