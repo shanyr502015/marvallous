@@ -14,7 +14,7 @@ else:
 print("Binary equivalent:", binary)
 
 
-# Alternative using built-in function:
+# Alternative using built-in function
 num = int(input("Enter a number: "))
 binary = bin(num)[2:]  # [2:] removes '0b' prefix
 print("Binary equivalent:", binary)
