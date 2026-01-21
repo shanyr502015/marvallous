@@ -1,21 +1,21 @@
-# process: pid, every process has unique number that one is pid
-# thread : tid, every thread has unique number that one is tid
+# process: pid, every process has a unique number which is called pid
+# thread: tid, every thread has a unique number which is called tid
 
-# pvm handdle process considerng its PID number not with name like addhar card number imp and unique, 
-# you can see duplicate name but adhar cared number
+ # PVM handles processes considering their PID number, not with name - like Aadhaar card number, important and unique
+ # you can see duplicate names but Aadhaar card numbers are unique
 
 
-import os # inbuild module, if third party error if not downloaded(pip)
+import os  # inbuilt module, if third party - error if not downloaded (pip)
 
 
 def main():
-    # print("pid of running proces is :", os.getpid)
+    # print("pid of running process is :", os.getpid)
     # print("pid of parent process is :", os.getppid)
-    print("pid of running proces is :", os.getpid())
+    print("pid of running process is :", os.getpid())
     print("pid of parent process is :", os.getppid())
 
 if __name__ == "__main__":
     main()
- # hotel mangt - os, you given room with specific room - room with rooom number
- # time complexity decided on basis of look
- # time execution(start to end time) is not time complexity
+# hotel management - OS is like a hotel manager, you are given a room with a specific room number (PID)
+# Just like multiple guests can have the same name, but each room has a unique room number, multiple processes can have the same name, but each process has a unique PID
+# EXTRA: time complexity is decided on the basis of loops, time execution (start to end time) is not time complexity
