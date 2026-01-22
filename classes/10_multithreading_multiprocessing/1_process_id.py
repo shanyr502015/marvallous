@@ -11,7 +11,7 @@ import os  # inbuilt module, if third party - error if not downloaded (pip)
 def main():
     # print("pid of running process is :", os.getpid)
     # print("pid of parent process is :", os.getppid)
-    print("pid of running process is :", os.getpid())
+    print("pid of running process is :", os.getpid()) # os.getpid
     print("pid of parent process is :", os.getppid())
 
 if __name__ == "__main__":
