@@ -14,7 +14,7 @@ class demo:
         # print("inside class method sun ")
         print("inside class method sun : ",cls.no)
 
-    @staticmethod
+    @staticmethodCFCCCCFCFCCFFCFCFV 
     def gun():
         # print("inside static method gun")
         print("inside static method gun :",demo.no)
