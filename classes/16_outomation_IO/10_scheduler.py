@@ -1,4 +1,3 @@
-# keyboardinterrupt --> ctrl + C
 import time 
 import datetime
 import schedule
@@ -14,8 +13,8 @@ def main():
     print("inside marvallous automationscript at :",datetime.datetime.now())
 
     # schedule.every(20).seconds.do(fun) 
-    schedule.every(1).minute.do(fun)
-    schedule.every(1).hour.do(gun)
+    schedule.every(2).seconds.do(fun)
+    schedule.every(3).seconds.do(gun)
 
     while True :
         schedule.run_pending()

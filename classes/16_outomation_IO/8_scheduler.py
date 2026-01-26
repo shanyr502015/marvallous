@@ -1,4 +1,3 @@
-import time 
 import datetime
 import schedule
 
@@ -8,8 +7,8 @@ def fun():
 def main():
     print("inside marvallous automationscript at :",datetime.datetime.now())
 
-    schedule.every(20).seconds.do(fun) # s wala seonds gya , second haa nahi
+    schedule.every(10).seconds.do(fun) # "with s" wala seconds gya , second haa nahi  " without s" wala
 
-# there is problem in this code see 9_.py file
+# there is problem in this code we see in 9_scheduler.py file
 if __name__ == "__main__":
     main()

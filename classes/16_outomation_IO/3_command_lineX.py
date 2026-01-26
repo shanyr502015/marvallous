@@ -1,7 +1,7 @@
 import sys
 
 def main():
-    print(sys.argv[0]) # commnadline2 , smodule chaa data use karat ahe module call karat nahi ahe only
+    print(sys.argv[0]) # command_lineX.py // here module chaa data use karat ahe module call karat nahi ahe
     print(len(sys.argv)) # 1
 
 if __name__ == "__main__":
