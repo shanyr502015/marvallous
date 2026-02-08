@@ -1,6 +1,8 @@
 ⬆️ Daily Git workflow
 
 cd C:\Users\shany\OneDrive\Desktop\marvallous
+git branch
+git pull
 git status
 git add .
 git commit -m "Added python_programming_assignment"

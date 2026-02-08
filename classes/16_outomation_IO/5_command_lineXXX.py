@@ -1,5 +1,5 @@
 # python3 5_command_lineXXX.py 11 10
-# 
+
 import sys
 
 def main():
@@ -16,21 +16,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,3 +1,3 @@
 import sys
-print(sys.argv)
+
 print("number fo command line arguments are:",len(sys.argv))
